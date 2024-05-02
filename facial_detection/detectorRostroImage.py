@@ -3,7 +3,7 @@ import numpy as np
 
 faceClassif = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-image = cv2.imread('/home/statick/workspaces/identificacion_facial/Deteccion_rostros/statick_ds.png')
+image = cv2.imread('statick_ds.png')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 faces = faceClassif.detectMultiScale(gray,
